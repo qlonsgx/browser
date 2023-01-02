@@ -3,7 +3,7 @@ import random
 check='5'
 if check=='5':
     a=''
-    a=a+requests.get(url='https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http&timeout=5000&country=all&ssl=all&anonymity=all').text.strip()+'\n'
+    a=a+requests.get(url='https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http&timeout=200&country=all&ssl=all&anonymity=all').text.strip()+'\n'
 
     file=open('proxy.txt','w')
     file.write(a)
