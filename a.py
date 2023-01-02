@@ -1,4 +1,5 @@
 import requests
+import random
 check='5'
 if check=='5':
     a=''
@@ -22,6 +23,7 @@ if check=='5':
     file=open('proxy.txt')
     a=file.readlines()
     a=list(set(a))
+    random.shuffle(a)
     file.close()
     file=open('proxy.txt','w')
     for i in a:
